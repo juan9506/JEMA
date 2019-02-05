@@ -18,7 +18,7 @@ export class HomePage {
       console.log("Correcto")
     }).catch(e => console.error(e))
 
-    dbProvider.getAll().then(tasks => {
+    dbProvider.getAllTasks().then(tasks => {
       console.log(tasks);
       this.tasks = tasks;
     })
@@ -28,7 +28,7 @@ export class HomePage {
   }
 
   getAllTasks(){
-    this.dbProvider.getAll().then(tasks => {
+    this.dbProvider.getAllTasks().then(tasks => {
       console.log(tasks);
       this.tasks = tasks;
     })
@@ -42,10 +42,10 @@ export class HomePage {
       nombre : this.nombre,
       completado : false
     }
-    this.dbProvider.insert(task);
+    this.dbProvider.insertTask(task);
     this.nombre = '';
 
-    this.dbProvider.getAll().then(tasks => {
+    this.dbProvider.getAllTasks().then(tasks => {
       this.tasks = tasks;
     }).catch( error => {
       console.error( error );
@@ -67,10 +67,10 @@ export class HomePage {
 
   eliminarRegistros(){
     this.completados.forEach(element => {
-      this.dbProvider.delete(element);
+      this.dbProvider.deleteTask(element);
     });
 
-    this.dbProvider.getAll().then(tasks => {
+    this.dbProvider.getAllTasks().then(tasks => {
       this.tasks = tasks;
     }).catch( error => {
       console.error( error );
