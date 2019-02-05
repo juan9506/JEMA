@@ -1,11 +1,27 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Wallet
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="contenido">
+    <ion-card id="efectivo" (click)="abrirAlertAgregar('efectivo')">
+      <ion-card-header>
+        <ion-card-title>Efectivo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-label>Prueba</ion-label>
+      </ion-card-content>
+    </ion-card>
+    <ion-card id="tarjeta" (click)="abrirAlertAgregar('tarjeta')">
+      <ion-card-header>
+        <ion-card-title>Tarjeta</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-label>Prueba 2</ion-label>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
