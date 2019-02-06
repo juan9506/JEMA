@@ -1,26 +1,31 @@
 <ion-content>
-  <ion-header>
+  <!-- <ion-header>
     <ion-toolbar>
       <ion-title>
         Wallet
       </ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
   <div class="contenido">
-    <ion-card id="efectivo" (click)="abrirAlertAgregar('efectivo')">
-      <ion-card-header>
-        <ion-card-title>Efectivo</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-label>Prueba</ion-label>
-      </ion-card-content>
+    <ion-card id="efectivo" class="tarjeta" (click)="abrirAlertAgregar('efectivo')">
+      <ion-card-title class="titulo" id="tEfectivo">Efectivo</ion-card-title>
+      <img class="imagen" src="../../assets/imgs/money2.png" alt="">
     </ion-card>
-    <ion-card id="tarjeta" (click)="abrirAlertAgregar('tarjeta')">
-      <ion-card-header>
-        <ion-card-title>Tarjeta</ion-card-title>
+    <ion-card id="tarjeta" class="tarjeta" (click)="abrirAlertAgregar('tarjeta')">
+      <ion-card-title class="titulo" >Tarjeta</ion-card-title>
+      <img class="imagen" id="iTarjeta" src="../../assets/imgs/card.png" alt="">
+    </ion-card>
+    <ion-card id="historial">
+      <ion-card-header id="cabecera">
+        <ion-card-title id="historial_titulo">Historial</ion-card-title>
       </ion-card-header>
-      <ion-card-content>
-        <ion-label>Prueba 2</ion-label>
+      <ion-card-content id="contenido_historial">
+        <ion-list>
+          <ion-item>
+            <ion-checkbox mode="ios"></ion-checkbox>
+            <ion-label>Juanes</ion-label>
+          </ion-item>
+        </ion-list>
       </ion-card-content>
     </ion-card>
   </div>

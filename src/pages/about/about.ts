@@ -77,5 +77,4 @@ export class AboutPage {
     })
     alertAgregar.present();
   }
-
 }

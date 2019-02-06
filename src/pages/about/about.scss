@@ -1,5 +1,4 @@
 .contenido{
-    margin-top: 20%;
     display: inline-block;
     margin-left: 2.5%;
     text-align: center;
@@ -7,11 +6,61 @@
 
 #efectivo{
     width: 150px;
+    height: 130px;
     float: left;
 }
 
 #tarjeta{
     width: 150px;
+    height: 130px;
     float: left;
     margin-top: 10px;
+}
+
+.tarjeta, #cabecera{
+    background-color: rgb(211, 209, 209);
+}
+
+.titulo{
+    position: absolute;
+    color: white;
+    margin-top: 10%;
+    padding-left: 8%;
+    font-size: 29px;
+    text-shadow: 0.2px 0.2px black;
+}
+
+#tEfectivo{
+    padding-left: 7%;
+}
+
+.imagen{
+    height: 93%;
+    width: 85%;
+    display: inline-block;
+}
+
+#iTarjeta{
+    height: 100%;
+}
+
+#historial_titulo{
+    color: white;
+    font-size: 29px;
+    margin-top: -14px;
+}
+
+#historial{
+    width: 321px;
+    position: absolute;
+    margin-top: 160px;
+}
+
+#contenido_historial{
+    margin-top: -50px;
+    height: 300px;
+}
+
+#cabecera{
+    height: 55px;
 }
